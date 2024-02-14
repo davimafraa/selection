@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*====ABSOLUTE====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+/*====FIRST CONTAINER'S BEGGINING====*/
+#first-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/fc-background5.jpg);
+    background-size: contain;
+    background-position: center -150px;
+    background-size: 101%;
+    position: relative;
+    text-align: center;
+    user-select: none;
+}
+#first-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0px -30px 40px 0px rgb(0, 0, 0);
+    pointer-events: none;
+}
+#first-container h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 122px;
+    font-weight: 1000;
+    line-height: 1;
+    padding-top: 370px;
+    color: #ffffff;
+    text-shadow: 0px 0px 20px black;
+}
+#first-container h2 {
+    margin-top: -10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 6.5px;
+    text-shadow: 0px 0px 20px black;
+    margin-bottom: 70px;
+}
+#first-container a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.253);
+    border: 1px solid white;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    padding: 10px 22px;
+}
+#first-container a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    text-shadow: none;
+    transition: 0.2s ease-in-out;
+}
+/*===========================================================================*/
+/*====@MEDIA 1200px====*/
+@media (max-width: 1200px) {
+    /*#first-container*/
+    #first-container {
+        background-position: top left;
+    }
+    #fc-1half {
+        width: 50%;
+    }
+    .head-text {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    .neck-text {
+        padding: 20px 0;
+        font-size: 39px;
+        font-weight: 1000;
+    }
+    
+    .body-text {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+/*====@MEDIA 850px====*/
+@media (max-width:850px) {
+    /*#first-container*/
+    #first-container {
+        background-size: 140%;
+        background-position: top left;
+    }
+    #fc-1half {
+        width: 92%;
+    }
+    .head-text {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    .neck-text {
+        font-size: 39px;
+        font-weight: 1000;
+    }
+    
+    .body-text {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
